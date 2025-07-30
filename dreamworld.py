@@ -1,8 +1,9 @@
 print('Welcome to Dreamworld, lets see what rides you are eligible to ride')
+
 age = int(input('How old are you?: '))
 height = int(input('How tall are you? (cm): '))
 
-if height < 80 and 3 < age < 8:
+if height < 80 and 3 <= age <= 8:
     print('You are allowed to go on the Fortress of Fun!')
 
 if height > 80:
@@ -19,3 +20,7 @@ if height > 120:
 
 if height > 150:
     print('You are allowed to go on the Stratosfear, Family Karts, and Scorpion Karts')
+
+if height < 80 and age > 3:
+    print('Sorry! You are not allowed to go on any of the rides')
+
